@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mengenal Java</title>
+
+    
+<!-- 
+    <script type="text/javascript">
+        function test(val1,val2)
+        {
+            document.write("<br>" + "perkalian : val1*val2" + "<br>");
+            document.write(3*3);
+            document.write("<br>" + "pembagian : val1/val2" + "<br>");
+            document.write(val1/val2);
+            document.write("<br>" + "penjumlahan : val1*val2" + "<br>");
+            document.write(val1+val2);
+            document.write("<br>" + "pengurangan : val1*val2" + "<br>");
+            document.write(val1-val2);
+            document.write("<br>" + "modulus : val1*val2" + "<br>");
+            document.write(val1%val2);
+
+        }
+    </script> -->
+
+    <!-- <script>
+
+        function pesan () {
+            alert(Selamat Belajar Javascript);
+        }
+
+    </script> -->
+
+
+    <!-- <script>
+        function test () 
+        {
+         val1=window.prompt("input nilai (1-5) :")
+         switch (val1) 
+         {
+            case "1" :
+                document.writeln("bilangan satu")
+                break
+            case "2" :
+                document.writeln("bilangan dua")
+                break
+            case "3" :
+                document.writeln("bilangan tiga")
+                break
+            case "4" :
+                document.writeln("bilangan empat")
+                break
+            case "5" :
+                document.writeln("bilangan lima")
+                break
+            default :
+                document.writeln("bilangan lainnya")
+         }   
+        }
+    </script> -->
+
+    <!-- <script>
+        function test () {
+            let val1=document.kirim.T1.value
+            if (val12%==0)
+            document.kirim.T2."bilangan bulat"
+            else
+            document.kirim.T2."bilangan ganjil"
+        }
+    </script> -->
+
+
+    <script>
+        function hitung(ele){
+            let total = document.getElementById("total").value;
+                total = (total ? parseInt (total) : 0);
+            let harga = 0;
+            
+            if (ele.checkend) {
+                harga = ele.value;
+                total += parseInt(harga)
+            } else {
+                harga = ele.value;
+                if (total > 0)
+                    total -= parseInt(harga)
+            }
+            document.getElementById("total").value = total;
+    
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+    <!-- <h1>Pengenalan JavaSript</h1>
+    <h3>Contoh Document.write dan Console.log</h3> -->
+    <!-- <script>
+
+        // 
+        // document.writeln(" Hello world ");
+        // console.log(" Hello world ");
+        // document.writeln(" <p></p>");
+
+        //  pemakaian alert sebagai property window 
+        // window.alert(" ini merupakan pesan untuk anda ");
+
+        //  pemakaian prompt 
+        // let nama = prompt (" siapa nama anda "," masukan nama anda ");
+        // document.writeln(" hai " + nama);
+    </script> -->
+
+    <!-- <script >
+        let nilai = prompt("masukan nilai anda" , 0)
+        let hasil = "";
+        if (nilai >= 60)
+        hasil = "lulus";
+        else 
+        hasil = "tidak lulus";
+        document.writeln("hasil :" + hasil);
+    </script>     -->
+
+
+
+
+<!-- <input type="button" name="button" value="arithmetic" onclick="test(10,7)"> -->
+
+<!-- <input type="button" name="button" value="switch" onclick="test(10,7)"> -->
+
+
+<!-- <form method="post" name="kirim">
+    <p>BIL <input type="text" name="T1" size="20">
+    MERUPAKAN BIL <input type="text" name="T2" size="20"></p>
+    <p><input type="button" value="Tebak" name="B1" onclick="test()"></p>
+</form> -->
+
+<!-- <script >
+    function ubahWarnaLB(warna) {
+        document.bgColor = warna;
+    }
+    function ubahWarnaLD(warna) {
+        document.fgColor = warna;
+    }
+</script>
+
+<h1> test </h1>
+<form>
+<input type="button" value="Latar Belakang Hijau" onclick="ubahWarnaLB(`GREEN`)">
+<input type="button" value="Latar Belakang putih" onclick="ubahWarnaLD(`WHITE`)">
+<input type="button" value="teks kuning" onclick="ubahWarnaLB(`YELOW`)">
+<input type="button" value="teks kuning" onclick="ubahWarnaLD(`BLUE`)">
+</form>
+
+<script >
+    document.writeln(" Dimodifikasi terakhir pada " +
+    document.lastModified);
+</script> -->
+
+
+<h1> Daftar Menu Makanan </h1>
+<label> <input type="checkbox" value="5000" id="menu1" onclick="hitung (this)"/> Ayam Goreng Rp. 5.000</label><br />
+<label> <input type="checkbox" value="500" id="menu2" onclick="hitung (this)"/> Tempe Goreng Rp. 500</label><br />
+<label> <input type="checkbox" value="2500" id="menu3" onclick="hitung (this)"/> Telur Dadar Rp. 2.500</label><br />
+<strong> Total Bayar : Rp . <input id="total" type="text" /></strong>
+
+
+</body> 
+</html>
